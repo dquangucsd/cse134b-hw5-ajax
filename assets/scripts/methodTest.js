@@ -59,8 +59,10 @@ getBtn.addEventListener('click', () =>
     };
     xhr.open("GET", "https://httpbin.org/get");
 
-    //send nothing since GET doesn't do anything
-    xhr.send();
+    let formData = new FormData();
+    formData.append("id", idEntry.value);
+    //send only id since is unique and GET doesn't need article or name
+    xhr.send(formData);
 });
 
 
@@ -114,8 +116,10 @@ deleteBtn.addEventListener('click', () =>
     };
     xhr.open("DELETE", "https://httpbin.org/delete");
 
-    //send nothing since GET doesn't do anything
-    xhr.send();
+    let formData = new FormData();
+    formData.append("id", idEntry.value);
+    //send only id since is unique and DELETE doesn't need article or name
+    xhr.send(formData);
 });
 
 
