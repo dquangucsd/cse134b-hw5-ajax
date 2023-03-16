@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: bisque;
+}
+
+
+#httpbin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#buttons {
+    display: flex;
+    align-items: center;
+    border: 1px solid palegoldenrod;
+}
+
+
+.button {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+td {
+
+    border: 2px dotted lightcoral;
+}

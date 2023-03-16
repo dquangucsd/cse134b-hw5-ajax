@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hey! It seems you've reached the *!*source code*!*. I've left some comments explaining what some tags, attributes do! -->
+<head>
+    <meta charset="UTF-8">
+    <title>Danny Quang's Portfolio &copy;</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="./assets/media/dq.png">
+
+    <script type="module" src="./assets/scripts/methodTest.js"></script>
+
+    <link rel="stylesheet" href="./assets/styles/method-test.css">
+
+    
+</head>
+
+
+<body>
+    <form method="dialog">
+        <div id = "httpbin-form">
+            <label for="id-entry">ID:</label>
+            <input class="text-entry" type="number" name="id-entry" id="id-entry">
+
+            <label for="name-entry">Article Name:</label>
+            <input class="text-entry" type="text" name="name-entry" id="name-entry">
+
+            <label for="body-entry">Article Body:</label>
+            <textarea class="text-entry" name="body-entry" id="body-entry" rows="5" cols="100"></textarea>
+        </div>
+
+    <div id="buttons">
+        <button id="post-btn" class="button" value="default">postBtn</button>
+        <button id="get-btn" class="button" value="default">getBtn</button>
+        <button id="put-btn" class="button" value="default">putBtn</button>
+        <button id="delete-btn" class="button" value="default">deleteBtn</button>
+    </div>
+    
+    </form>
+
+
+
+    Response: 
+    <output id="response">
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>args</th>
+                    <th>files</th>
+                    <th>form</th>
+                    <th>headers</th>
+                    <th>origin</th>
+                    <th>url</th>
+
+                </tr>
+            </thead>
+            <tbody id="data-output">
+                <!--Populated when javascript runs-->
+                
+            </tbody>
+        </table>
+
+
+    </output>
+</body>
